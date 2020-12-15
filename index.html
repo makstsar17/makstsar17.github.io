@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Go</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="header__container">
+                    <a class="col1-2" href="index.html"><img class="logo__header" src="images/logo_header.png" alt="Logo"></a>
+                    <nav class="menu__navigation col5-8" id="navigation">
+                        <ul class="top__menu">
+                            <li class="nav__link"><a href="#intro">Home</a></li>
+                            <li class="nav__link">
+                                <a class="submenu__link" href="#main__content">about us</a>
+                                <ul class="submenu">
+                                    <li class="nav__link"><a href="#main__content__section__1">Overview</a><hr></li>
+                                    <li class="nav__link"><a href="#main__content__section__2">Facilities</a><hr></li>
+                                    <li class="nav__link"><a href="#main__content__section__3">Our system</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__link"><a href="#services__cards">services</a></li>
+                            <li class="nav__link"><a href="#contact__section">contact us</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="sign__bar col10-11">
+                        <li class="sign__in">
+                            <button onclick="func1(getElementById('sign_in'))" class="sign__in__button">sign in</button>
+                            <div class="sign__in__content" id='sign_in'>
+                                <form class="sign__in__form" action="#" method="POST"> 
+                                    <h3>Sign in</h3>
+                                    <div class="sign__item__enter">
+                                        <label for="uname__in">username or email</label>
+                                        <input type="text" placeholder="username or email" id="uname__in" required>
+                                    </div>
+
+                                    <div class="sign__item__enter">
+                                        <label for="pw__in">password</label>
+                                        <input type="password" placeholder="password" id="pw__in" required>
+                                    </div>
+
+                                    <div class="sign__item__submit">
+                                        <input type="checkbox" checked="checked" id="remember">
+                                        <label for="remember">remember me</label>
+                                        <button type="submit">Login</button>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="sign__up">
+                            <button onclick="func1(getElementById('sign_up'))" class="sign__up__button"><!--add onclick JS function-->sign up</button>
+                            <div class="sign__up__content" id='sign_up'>
+                                <form class="sign__up__form" action="#" method="POST">
+                                    <h3>Sign up</h3>
+                                    <div class="sign__item__enter">
+                                        <label for="uname__up">email</label>
+                                        <input type="text" placeholder="email" id="uname__up" required>
+                                    </div>
+                                    <div class="sign__item__enter">
+                                        <label for="pw__up">password</label>
+                                        <input type="password" placeholder="password" id="pw__up" required>
+                                    </div>
+                                    <div class="sign__item__enter">
+                                        <label for="conf__pw__up">confirm password</label>
+                                        <input type="password" placeholder="confirm password" id="conf__pw__up" required>
+                                    </div>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="menu__icon"  onclick="openNav()"><span></span><span></span><span></span></span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="intro" id="intro">
+                <div class="container">
+                    <div class="intro__container col5-8">
+                        <h1 class="intro__title">WE ARE SPORT COMPLEX</h1>
+                        <h2 class="intro__subtitle">Life is short,<br> Prove your worth today</h2>
+                    </div>
+                </div>
+            </div>
+            <section class="main__content" id="main__content">
+               <div class="container">
+                    <h3 class="section__title">What about us?</h3>
+    
+                    <div class="left__subsection" id="main__content__section__1">
+                        <img class="col9-12" src="images/content1.jpg" alt="tennis"> 
+                        <article class="col2-8">
+                            <h4>Overview</h4>
+                            <p>
+                                &emsp;&emsp;Cohasset Sports Complex opened its doors in 2010. We have both a full
+                                sized outdoor turf field and an indoor turf field used to offer a variety 
+                                of camps, clinics and leagues for people to get involved. Our activities range
+                                from training toddler's soccer or lacrosse skills to adults wanting to get some practice in too!
+                            </p>
+                            <p>
+                                &emsp;&emsp;Our indoor space is top-of-the-line turf, which can be used as a full sized field, 2 mid sized fields for league play 
+                                or 4 smaller training fields. The indoor facility also contains garage doors that can be opened or closed depending on the season.
+                            </p> 
+                        </article>
+                    </div>
+    
+                    <div class="right__subsection" id="main__content__section__2">
+                        <img class="col1-4" src="images/content2.jpg" alt="gym">
+                        <article class="col5-11">
+                            <h4>Facilities</h4>
+                            <p>
+                                &emsp;&emsp;At Galway Rovers Football Club, our mission is to develop players from Junior Rovers (U5) through High School (U19). 
+                                We create their success through proper technique, discipline, competitive soccer… and fun! Our coaches are carefully 
+                                selected for each age group to train players to gain tactical awareness and reach their highest potential.
+                            </p>
+                            <p>
+                                &emsp;&emsp;The Galway Rovers Football Club is the hidden gem of the South Shore, in operation for the past 37 years. We are the 
+                                most family-friendly soccer club and provide amazing life experiences beyond the pitch. See how you can become part of
+                                our family and join us at our club!
+                            </p>
+                        </article>
+                    </div>
+    
+                    <div class="left__subsection" id="main__content__section__3">
+                        <img class="col9-12" src="images/content3.jpg" alt="Sport Complex">
+                        <article class="col2-8">
+                            <h4>Our system</h4>
+                            <p>
+                                &emsp;&emsp;In your initial interview we will assess your physical condition through a study of the body composition (bone%, water,
+                                fat, muscle) and we will make a training tailored to your goals <b>TOTALLY FREE</b>
+                            </p>
+                            <p>
+                                &emsp;&emsp;Then you will have continuous technical advice in the fitness room, changing your program when it completes its cycle …
+                                At Atenas we make it very easy for you to be in shape.
+                            </p>
+                            <p>
+                                &emsp;&emsp;If you still prefer to accelerate the process and make it more specific and motivating consult our Personal Training service.
+                            </p>
+                            <p>
+                                &emsp;&emsp;* Exclusive for members, not valid for session or external bonuses. *
+                            </p>
+                        </article>
+                    </div>
+               </div>
+            </section>
+            <section class="services__cards" id="services__cards">
+                <div class="container">
+                    <div class="col2-11">
+                        <h3 class="cards__title">Our services</h3>
+                        <div class="cards__container">
+                            <button class="scroll col2" onclick="func2(1)">&lt;</button>
+                            <ul class="cards">
+                                <li class="card1 col3-4" id="card1">
+                                    <div class="card__container">
+                                        <img src="images/basketball.jpg" alt="basketball">
+                                        <h4 class="card__title">Basketball</h4>
+                                        <p class="card__text">Basketball, colloquially referred to as hoops, is a team sport in which two teams, most commonly of five players each.</p>
+                                        <span><a href="#" class="button__link">Read more</a></span>
+                                    </div>
+                                </li>
+                                <li class="card2 col6-7" id="card2">
+                                    <div class="card__container">
+                                        <img src="images/tennis.jpg" alt="tennis">
+                                        <h4 class="card__title">Tennis</h4>
+                                        <p class="card__text">A tennis court is the venue where the sport of tennis is played. The same surface can be used to play.</p>
+                                        <span><a href="#" class="button__link">Read more</a></span>
+                                    </div>
+                                </li>
+                                <li class="card3 col9-10" id="card3">
+                                    <div class="card__container">
+                                        <img src="images/aqua.jpg" alt="pool">
+                                        <h4 class="card__title">Aquatic center</h4>
+                                        <p class="card__text"> We are now open with a modified swim schedule that currently includes lap swimming, water walking.</p>
+                                        <span><a href="#" class="button__link">Read more</a></span>
+                                    </div>
+                                </li>
+                                <li class="card4 col3-4" id="card4">
+                                    <div class="card__container">
+                                        <img src="images/gym.jpg" alt="gym">
+                                        <h4 class="card__title">Gym</h4>
+                                        <p class="card__text">Gyms were popular in ancient Greece. Gym, is a covered location for athletics.</p>
+                                        <span><a href="#" class="button__link">Read more</a></span>
+                                    </div>
+                                </li>
+                                <li class="card5 col6-7" id="card5">
+                                    <div class="card__container">
+                                        <img src="images/running.jpg" alt="running">
+                                        <h4 class="card__title">Running</h4>
+                                        <p class="card__text">Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot.</p>
+                                        <span><a href="#" class="button__link">Read more</a></span>
+                                    </div>
+                                </li>
+                                <li class="card6 col9-10" id="card6">
+                                    <div class="card__container">
+                                        <img src="images/football.jpg" alt="football">
+                                        <h4 class="card__title">Football</h4>
+                                        <p class="card__text">Football is a team sport played with a spherical ball between two teams of 11 players.</p>
+                                        <span><a href="#" class="button__link">Read more</a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="scroll col11" onclick="func2(2)">&gt;</button>
+                        </div>
+                        <div class="dots">
+                            <span class="dot1" id="dot1"></span>
+                            <span class="dot2" id="dot2"></span>
+                            <span class="dot3" id="dot3"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact__section" id="contact__section">
+                <div class="container">
+                    <div class="contact__container">
+                        <h3 class="contact__title col2-7">CONTACT US</h3>
+                        <div class="col2-6">
+                            <form class="contact__form" action="#" method="post">
+                                <div class="contact__field">
+                                    <label for="fname">name</label>
+                                    <input type="text" id="fname" placeholder="NAME" required>
+                                </div>
+        
+                                <div class="contact__field">
+                                    <label for="telephone">telephone</label>
+                                    <input type="tel" id="telephone" placeholder="TELEPHONE" required>
+                                </div>
+        
+                                <div class="contact__field">
+                                    <label for="email">email</label>
+                                    <input type="email" id="email" placeholder="EMAIL" required>
+                                </div>
+                                <div class="contact__field">
+                                    <label for="message">message</label>
+                                    <textarea id="message" placeholder="MESSAGE" required></textarea>
+                                </div>
+                                <div class="button__container">
+                                    <button type="submit">SEND</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer__container">
+                    <div class="logo__container col1-4">
+                        <img src="images/logo_footer.png" alt="logo">
+                    </div>
+                    <div class="col5-12">
+                        <div class="col8-11">
+                            <ul class="contact__info">
+                                <li class="contact__info__item">
+                                    <a href="#">
+                                        <img src="images/location.png" alt="location">
+                                        <span>
+                                            1 Peremohy Ave.,03680, Kyiv, Ukraine
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="contact__info__item">
+                                    <a href="mailto:sportcomplex@gmail.com">
+                                        <img src="images/message.png" alt="message">
+                                        <span>
+                                            sportcomplex@gmail.com
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="contact__info__item">
+                                    <a href="tel:+(380)987654321">
+                                        <img src="images/telephone.png" alt="telephone">
+                                        <span>
+                                            + (380) 98 765 4321
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="contact__info__item">
+                                    <ul class="contact__list__social__media">
+                                        <li class="social__media__item">
+                                            <a href="https://www.messenger.com/">
+                                                <img src="images/Messenger.png" alt="Messenger">
+                                            </a>
+                                        </li>
+                                        <li class="social__media__item">
+                                            <a href="https://twitter.com/">
+                                                <img src="images/Twitter.png" alt="Twitter">
+                                            </a>
+                                        </li>
+                                        <li class="social__media__item">
+                                            <a href="google.com">
+                                                <img src="images/Google.png" alt="Google">
+                                            </a>
+                                        </li>
+                                        <li class="social__media__item">
+                                            <a href="facebook.com">
+                                                <img src="images/Facebook.png" alt="Facebook">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span>
+                                        © 2020 sportcomlex.com.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+<!--TEMPORARY-->
+<script>
+    function openNav() {
+        var modal = document.getElementById("navigation");
+
+        if(window.getComputedStyle(modal).width == "250px"){
+            modal.style.width = "0";
+        }else{
+            modal.style.width = "250px";
+        }
+    }
+    function func1(modal){
+        var mod1 = document.getElementById('sign_in');
+        var mod2 = document.getElementById('sign_up');
+        if(window.getComputedStyle(modal).display == "block"){
+            modal.style.display = "none";
+        }else{
+            if(mod1 != modal && window.getComputedStyle(mod1).display == "block"){
+                mod1.style.display = "none";
+            }
+            else if(mod2 != modal && window.getComputedStyle(mod2).display == "block"){
+                mod2.style.display = "none";
+            }
+            modal.style.display = "block";
+        }
+    }
+    function func2(variant){
+        var card1 = document.getElementById('card1');
+        var card2 = document.getElementById('card2');
+        var card3 = document.getElementById('card3');
+        var card4 = document.getElementById('card4');
+        var card5 = document.getElementById('card5');
+        var card6 = document.getElementById('card6');
+        const screenWidth = window.innerWidth;
+
+        if(variant == 1){
+            card1.style.animationName = "slideRight";
+            card2.style.animationName = "slideRight";
+            card3.style.animationName = "slideRight";
+            card4.style.animationName = "slideRight";
+            card5.style.animationName = "slideRight";
+            card6.style.animationName = "slideRight";
+        }
+        else if(variant == 2){
+            card1.style.animationName = "slideLeft";
+            card2.style.animationName = "slideLeft";
+            card3.style.animationName = "slideLeft";
+            card4.style.animationName = "slideLeft";
+            card5.style.animationName = "slideLeft";
+            card6.style.animationName = "slideLeft";
+        }
+        if(screenWidth > 930){
+        if(window.getComputedStyle(card1).display == "block"){
+                card1.style.display = "none";
+                card2.style.display = "none";
+                card3.style.display = "none";
+                card4.style.display = "block";
+                card5.style.display = "block";
+                card6.style.display = "block";
+                document.getElementById('dot1').style.backgroundColor = "#c59d5f";
+                document.getElementById('dot2').style.backgroundColor = "#f2dcbb";
+            }
+            else{
+                card1.style.display = "block";
+                card2.style.display = "block";
+                card3.style.display = "block";
+                card4.style.display = "none";
+                card5.style.display = "none";
+                card6.style.display = "none";
+                document.getElementById('dot1').style.backgroundColor = "#f2dcbb";
+                document.getElementById('dot2').style.backgroundColor = "#c59d5f";
+            }
+        }
+        else{
+            if(window.getComputedStyle(card1).display == "block"){
+                card1.style.display = "none";
+                card2.style.display = "none";
+                document.getElementById('dot1').style.backgroundColor = "#f2dcbb";
+                if(variant == 1){
+                    card5.style.display = "block";
+                    card6.style.display = "block";
+                    document.getElementById('dot3').style.backgroundColor = "#c59d5f";
+                }else{
+                    card3.style.display = "block";
+                    card4.style.display = "block";
+                    document.getElementById('dot2').style.backgroundColor = "#c59d5f";
+                }
+            }
+            else if(window.getComputedStyle(card3).display == "block"){
+                card3.style.display = "none";
+                card4.style.display = "none";
+                document.getElementById('dot2').style.backgroundColor = "#f2dcbb";
+                if(variant == 1){
+                    card1.style.display = "block";
+                    card2.style.display = "block";
+                    document.getElementById('dot1').style.backgroundColor = "#c59d5f";
+                }else{
+                    card5.style.display = "block";
+                    card6.style.display = "block";
+                    document.getElementById('dot3').style.backgroundColor = "#c59d5f";
+                }
+            }
+            else{
+                card5.style.display = "none";
+                card6.style.display = "none";
+                document.getElementById('dot3').style.backgroundColor = "#f2dcbb";
+                if(variant == 1){
+                    card3.style.display = "block";
+                    card4.style.display = "block";
+                    document.getElementById('dot2').style.backgroundColor = "#c59d5f";
+                }else{
+                    card1.style.display = "block";
+                    card2.style.display = "block";
+                    document.getElementById('dot1').style.backgroundColor = "#c59d5f";
+                }
+            }
+        }
+    }
+</script>
