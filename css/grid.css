@@ -516,10 +516,10 @@ button.col11 {
 }
 @media screen and (min-width: 930px){
     .card1, .card2, .card3{
-        display: block !important;
+        display: block;
     }
     .card4, .card5, .card6{
-        display: none !important;
+        display: none;
     }
 }
 /* ///// */
